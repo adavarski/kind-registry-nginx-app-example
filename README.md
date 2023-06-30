@@ -16,7 +16,7 @@ Note: (Optional): Feel free to change `sampleapp.com` to any other domain name o
 `cd ./chart/values.yaml` and replace the value of `ingressHostName`
 ```
 
-Commands to run:
+### Usage (Commands to run):
 Run the folowing only if the pre-requisites stated above are all satisfied
 - Run `make create_kind_cluster_with_registry` to create a kind cluster
 - Run the application with `make install_app`
