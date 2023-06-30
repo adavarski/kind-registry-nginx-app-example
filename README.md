@@ -6,7 +6,9 @@ Pre-requisites:
 - [Kind installed](https://kind.sigs.k8s.io/)
 
 
-### Run `sudo vi /etc/hosts`, and add the following to the end of the file with a domain name of your choosing:
+### /etc/hosts 
+
+Run `sudo vi /etc/hosts`, and add the following to the end of the file with a domain name of your choosing:
   - 127.0.0.1   sampleapp.com
 
 Note: (Optional): Feel free to change `sampleapp.com` to any other domain name of your choosing:
