@@ -13,7 +13,7 @@ Run `sudo vi /etc/hosts`, and add the following to the end of the file with a do
 
 `127.0.0.1   sampleapp.com`
 
-Note: (Optional): Feel free to change `sampleapp.com` to any other domain name of your choosing (simpleapp.192.168.1.99.nip.io)
+Note: (Optional): Feel free to change `sampleapp.com` to any other domain name of your choosing (Using nip.io -> simpleapp.192.168.1.99.nip.io)
 ```
 `cd ./chart/values.yaml` and replace the value of `ingressHostName`
 ```
@@ -43,4 +43,20 @@ $ curl sampleapp.com
     <p>Deploy to kubernetes</p>
 </body>
 </html>
+
+### Note: If using nip.io 
+$ curl simpleapp.192.168.1.99.nip.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K8s Project</title>
+</head>
+<body>
+    <p>Deploy to kubernetes</p>
+</body>
+</html>
+
 ```
