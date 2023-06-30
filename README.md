@@ -13,7 +13,7 @@ Run `sudo vi /etc/hosts`, and add the following to the end of the file with a do
 
 `127.0.0.1   sampleapp.com`
 
-Note: (Optional): Feel free to change `sampleapp.com` to any other domain name of your choosing:
+Note: (Optional): Feel free to change `sampleapp.com` to any other domain name of your choosing (simpleapp.192.168.1.99.nip.io)
 ```
 `cd ./chart/values.yaml` and replace the value of `ingressHostName`
 ```
