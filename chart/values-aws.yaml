@@ -1,0 +1,7 @@
+appName: sampleapp-website
+imageName: <set_this_with_ecr_repo>/sampleapp.com
+imagePullSecretName: sampleapp
+replicas: 1
+serviceName: sampleapp-svc
+ingressHostName: sampleapp.com
+sourcePort: 80

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.appName }}
+  # Uncomment annotations when using aws ingress controller
+  # annotations:
+  #   kubernetes.io/ingress.class: alb
+  #   alb.ingress.kubernetes.io/target-type: ip
+  #   alb.ingress.kubernetes.io/scheme: internet-facing
+spec:
+  rules:
+    - host: {{ .Values.ingressHostName }} # remove this line when using aws ingress controller
+      http:
+        paths:
+          - backend:
+              service:
+                name: {{ .Values.serviceName }}
+                port:
+                  number: {{ .Values.sourcePort }}
+            path: /
+            pathType: Prefix
