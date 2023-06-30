@@ -1,13 +1,13 @@
 ## Simple nginx:app (for playgrounds & LABS) 
 
 
-## Requirements
+### Requirements
 
 - Docker 
 - [Kind installed](https://kind.sigs.k8s.io/)
 
 
-### /etc/hosts 
+#### Fix /etc/hosts 
 
 Run `sudo vi /etc/hosts`, and add the following to the end of the file with a domain name of your choosing:
 
