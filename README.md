@@ -6,10 +6,13 @@ Pre-requisites:
 - [Kind installed](https://kind.sigs.k8s.io/)
 
 
-- Run `sudo vi /etc/hosts`, and add the following to the end of the file with a domain name of your choosing:
+### Run `sudo vi /etc/hosts`, and add the following to the end of the file with a domain name of your choosing:
   - 127.0.0.1   sampleapp.com
-- (Optional) Feel free to change `sampleapp.com` to any other domain name of your choosing:
-  - `cd ./chart/values.yaml` and replace the value of `ingressHostName`
+
+Note: (Optional): Feel free to change `sampleapp.com` to any other domain name of your choosing:
+```
+`cd ./chart/values.yaml` and replace the value of `ingressHostName`
+```
 
 Commands to run:
 Run the folowing only if the pre-requisites stated above are all satisfied
